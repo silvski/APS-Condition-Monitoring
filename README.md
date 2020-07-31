@@ -1,2 +1,4 @@
 # APS-Condition-Monitoring
-In this repository I will perform binary classification on an unbalanced data set using LGBM.
+Air Pressure Systems (APS) play a big role in controlling the brakes and gear changes of very large vehicles (trucks and busses). Failing to identify which APS is at risk of breakdown is not only costly, but is usually fatal to the driver and bystanders alike. This is a condition monitoring + anomaly detection usecases wherein we want to capture as much of the failure instances as possible while also making sure to minimize the amount of false positives and false negatives.
+
+This repostory showcases the usage of LGBM for unbalanced binary classification of APS performance data. Also shown here are the usage of shapely values in conjuction with spearman correlation and single linkage hierarchical clustering for feature selection. The final model results in a loss (due to wrong predictions) of just 10K euros which is a 93% loss reduction compared to the overly cautious approach of doing preventive maintenance on every single data point in the test set (results to a ~150k loss).
